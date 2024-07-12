@@ -1,0 +1,38 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/gutenberg-ancres-menu",
+	"category": "gutenberg",
+	"icon": "smiley",
+	"attributes": {
+		"ancres": {
+		  "type": "array",
+		  "default": [],
+		  "items": {
+			"type": "object",
+			"properties": {
+				"id": {
+				  "type": "number",
+				  "selector": "data-id"
+				},
+				"idAncre": {
+					"type": "string",
+					"default": "",
+					"selector": ".ancre-id"
+				},
+				"labelAncre": {
+					"type": "string",
+					"default": "",
+					"selector": ".ancre-label"
+				}
+			}
+		  }
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutenberg-ancres-menu",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
